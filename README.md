@@ -19,7 +19,7 @@ The above workflow has been followed throughout every stage.
 ### Step 01
 Clone the repository
 ```bash
-https://github.com/entbappy/Chicken-Disease-Classification--Project
+git clone https://github.com/entbappy/Chicken-Disease-Classification--Project
 ```
 
 ### Step 02
