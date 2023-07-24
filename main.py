@@ -2,9 +2,12 @@ from cnnClassifier import logger
 from cnnClassifier.pipeline.stage_01_data_ingestion import DataIngestionTrainingPipeline
 from cnnClassifier.pipeline.stage_02_prepare_base_model import PrepareBaseModelTrainingPipeline
 from cnnClassifier.pipeline.stage_03_training import ModelTrainingPipeline
+from cnnClassifier.pipeline.stage_04_evaluation import EvaluationPipeline
 
 logger.info("Yo! This is my custom log!")
 
+
+#1
 STAGE_NAME = "Data Ingestion stage"
 try:
    logger.info(f"---------Stage {STAGE_NAME} started---------") 
@@ -12,10 +15,10 @@ try:
    data_ingestion.main()
    logger.info(f"---------Stage {STAGE_NAME} completed---------")
 except Exception as e:
-        logger.exception(e)
-        raise e
+   logger.exception(e)
+   raise e
 
-
+#2
 STAGE_NAME = "Prepare base model"
 try: 
    logger.info(f"*******************")
@@ -24,10 +27,10 @@ try:
    prepare_base_model.main()
    logger.info(f"---------Stage {STAGE_NAME} completed---------\n")
 except Exception as e:
-        logger.exception(e)
-        raise e
+   logger.exception(e)
+   raise e
 
-
+#3
 STAGE_NAME = "Training"
 try: 
    logger.info(f"*******************")
@@ -36,5 +39,18 @@ try:
    model_trainer.main()
    logger.info(f"---------Stage {STAGE_NAME} completed---------")
 except Exception as e:
-        logger.exception(e)
-        raise e
+   logger.exception(e)
+   raise e
+
+#4
+STAGE_NAME = "Evaluation stage"
+try:
+   logger.info(f"*******************")
+   logger.info(f"---------Stage {STAGE_NAME} started---------")
+   model_evalution = EvaluationPipeline()
+   model_evalution.main()
+   logger.info(f"---------Stage {STAGE_NAME} completed---------")
+
+except Exception as e:
+   logger.exception(e)
+   raise e
