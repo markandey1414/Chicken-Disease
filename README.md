@@ -1,4 +1,5 @@
 Hello, here I will create a new project on Chicken Disease Classification.
+Below is the project workflow:
 
 1. Update config.yaml
 2. update secrets.yaml
