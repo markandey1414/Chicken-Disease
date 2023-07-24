@@ -57,7 +57,7 @@ dvc dag
 
 # AZURE-CICD-Deployment-with-Github-Actions
 
-## Save the passwoord
+## Save the password.
 
 ## Run from terminal:
 ```bash
