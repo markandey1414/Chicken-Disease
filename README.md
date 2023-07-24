@@ -1,6 +1,6 @@
 Hello, here I will create a new project on Chicken Disease Classification.
 
-1. Update cofig.yaml
+1. Update config.yaml
 2. update secrets.yaml
 3. Update params.yaml
 4. Update the entity
