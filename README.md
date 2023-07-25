@@ -39,8 +39,11 @@ Run the final command
 ```bash
 python main.py
 ```
-
-Now open your local host and port
+To run it on your local host, type the following command
+```bash
+python app.py
+```
+Now open your local host and port (8080: AWS, 80: Azure) 
 
 ### DVC commands
 ```
