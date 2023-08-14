@@ -1,4 +1,4 @@
-# Namaste, Hello, here I have created an end to end project on Chicken Disease Classification, with deployment on Azure.
+# Namaste, Hello, here I have created an end to end project on Chicken Disease Classification using VGG16 architecture, with deployment on Azure.
 
 ## Below is the project workflow:
 
